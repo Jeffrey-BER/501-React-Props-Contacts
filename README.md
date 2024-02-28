@@ -1,54 +1,54 @@
 # Task
 
-- Create a a Contact List with 4 entrys.
-  - Use the data stored in App.jsx
-  - use the images in the public folder
-- use google fonts
+- Create a Contact List with 4 entries.
+  - Use the data stored in App.jsx.
+  - Use the images in the public folder.
+- Use Google Fonts.
 
 # Solution / Description:
 
 ---
 
-## Preperation
+## Preparation
 
-- Project preperation
-  - npm create vite@latest
-    - answer all questions 4 Setup
-  - install npm in the folder
-  - git init !Check gitignore!
-  - npm run dev
+- Project preparation:
+  - Run `npm create vite@latest`.
+    - Answer all questions for setup.
+  - Install npm in the folder.
+  - Initialize Git (`git init`). Check `.gitignore`.
+  - Run `npm run dev`.
 
 ---
 
 ## General Description:
 
-- index.jsx starts the Application with a Render Call on Component "<App />"
-- In App.jsx are the Subcomponents with its custom Propertys
-  - Each Subcomponent calls a "???" to create html elements based on there propertys.
-- This job is done by the function "Contact" in "Contacts.jsx"
-  - the fuction takes each "Contact" as Parameter and returns a Object with html elemets stored as Strings.
-- at the end The Component App stores a Object with mutiple objects inside filled with strings representing each contact in html elemt sytax
+- `index.jsx` starts the application with a render call on component `<App />`.
+- In `App.jsx`, there are subcomponents with their custom properties.
+  - Each subcomponent calls a "helper function" to create HTML elements based on their properties.
+- This job is done by the function "Contact" in "Contacts.jsx".
+  - The function takes each "Contact" as a parameter and returns an object with HTML elements stored as strings.
+- At the end, the `App` component stores an object with multiple objects inside, filled with strings representing each contact in HTML element syntax.
 
 ---
 
-## File description
+## File Description
 
-- Starting point is "index.html"
+- Starting point is `index.html`.
 
-  - header:
-    - link google fonts
-    - link stylesheet
-  - body:
-    - create a div as root element
-    - add a script src index.jsx
+  - Header:
+    - Link Google Fonts.
+    - Link stylesheet.
+  - Body:
+    - Create a `div` as the root element.
+    - Add a script source: `index.jsx`.
 
-- index.jsx
+- `index.jsx`
 
-  - Importing
-    - import React & ReactDOM
-    - import App (App.jsx)
-  - Render App component
-    - ReactDOM.render(App, in the "root")
+  - Importing:
+    - Import React & ReactDOM.
+    - Import `App` (`App.jsx`).
+  - Render `App` component:
+    - `ReactDOM.render(<App />, document.getElementById("root"))`.
 
-- App.jsx
-  -
+- `App.jsx`
+  - Stores the custom properties and calls "Contacts" to create HTML elements using JSX syntax.
